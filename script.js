@@ -1,18 +1,23 @@
 const exampleList =["Apples","Pears","Oranges"];
 const exampleList2=[ { name:"Bakyt",age:18},
+{name:"Dosbol",age:32},
 {name:"Dosbol",age:32}
-
 ]
+console.log(exampleList2[0])
+console.log(exampleList2[0].age)
+console.log(exampleList2[1])
+
+
 
 const h1 = document.querySelector("h1");
 document.querySelector("#display-text").addEventListener("intut", function() {
   h1.textContent = this.value;
 });
-document.querySelector("#font-family).addEventListener("change",function() {
-  h1.textContent=this.value;
+document.querySelector("#font-family").addEventListener("change",function() {
+  h1.textContent= this.value;
 });
   h1.style.fontFamily=this.value;
-});
+;
 
 document.querySelector("#text-bold").addEventListener("change",function(){
   if (this.checked) {
